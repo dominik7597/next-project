@@ -37,6 +37,7 @@ function ArtCard({ art, index }: Prop) {
           src={`https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg`}
           alt={art.title}
           fill
+          unoptimized
         />
       </div>
       <div className="py-4 flex flex-col gap-3">
@@ -48,8 +49,8 @@ function ArtCard({ art, index }: Prop) {
         <div className="flex gap-4 items-center">
           <div className="flex flex-row gap-2 items-center">
             <Image
-              src="./episodes.svg"
-              alt="episodes"
+              src="./info.svg"
+              alt="info"
               width={20}
               height={20}
               className="object-contain"
